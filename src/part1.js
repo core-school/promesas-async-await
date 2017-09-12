@@ -1,16 +1,6 @@
-/* PART 1: A timeout as a promise */
+/* PART 1: Running the timeout */
+const timeout = require('./part1.timeout');
 
 // Example 1
-const timeout = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-// Example 2
-/*const timeout = function(ms){
-  return new Promise(function(resolve){
-    setTimeout(function(){
-      resolve("hola");
-  },ms);
-  })
-};*/
-
-
-module.exports = timeout;
+console.log('Ready....')
+timeout(2000).then(() => console.log('Go!'));

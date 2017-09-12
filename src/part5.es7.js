@@ -1,5 +1,5 @@
 /* Part 5: async await example */
-const timeout = require('./part1');
+const timeout = require('./part1.timeout');
 
 // Async function one
 async function one(){
