@@ -6,7 +6,7 @@ const timeout = ms => new Promise((resolve,reject) => {
     resolve();
     console.log("Hola k ase");
   }, ms);
-  reject();
+  //reject();
 });
 
 timeout(1000).then( () => console.log("OK")).catch(e=> console.log("ERROR"));

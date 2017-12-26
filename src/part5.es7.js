@@ -1,10 +1,11 @@
 /* Part 5: async await example */
-const timeout = require('./part1.timeout');
+const timeout = require('./part1.1.timeout');
 
 // Async function one
 async function one(){
   console.log("UNO");
-  await timeout(2000).then(() => console.log("final")); // <-- LOOK AT THIS!!!
+  await timeout(2000)
+          .then(() => console.log("final"))// <-- LOOK AT THIS!!!
   console.log("Uno y medio");
   return "dos";
 }
@@ -19,4 +20,5 @@ async function read () {
 console.log("CUATRO");
 read().then( o => console.log("CINCO"));
 console.log("TRES");
-//read().then(o => console.log(o));
+var x = read().then(o => console.log(o));
+console.log(x);

@@ -4,13 +4,14 @@
 const timeout = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // Example 2
-/*const timeout = function(ms){
-  return new Promise(function(resolve){
-    setTimeout(function(){
-      resolve("hola");
-  },ms);
-  })
-};*/
+// const timeout = function(ms){
+//   return new Promise(function(resolve){
+//     setTimeout(function(){
+//       resolve("hola");
+//     },ms);
+//   })
+// };
+
 
 
 module.exports = timeout;

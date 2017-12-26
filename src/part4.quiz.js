@@ -13,38 +13,14 @@ function timeout(ms, letra) {
  }
 timeout(140, "A").then(o => console.log("holaAA"));
 timeout(100, "B").then(o => console.log("holaBB"));
-// Yaiza y Manu
+// juan y cristian
 /*
- - adios 1A *
- - hola 1A *
- - adios 1B
- - hola 1B
- - adios 2B
- - hola BB
- - adios 2A
- - hola AA
- */
-
-// Carlos y Miguel
-/*
- - adios 1A *
- - hola 1A *
- - adios 1B *
- - hola 1B *
- - hola BB
- - adios 2B
- - hola AA
- - adios 2A
- */
-
-// Victor
-/*
- - hola 1B
- - hola 1A
- - adios 2B
- - adios 2A
- - adios 1B
- - adios 1A
- - holaBB
- - holaAA
+adios1A
+hola1A
+adios1B
+hola1B
+adios2B
+holaBB
+adios2A
+holaAA
 */
