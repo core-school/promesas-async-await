@@ -1,5 +1,4 @@
-
-/* Part 4: Promise QUIZ */
+// PART 4: Promise QUIZ
 
 function timeout(ms, letra) {
      return new Promise(function(resolve){
@@ -13,14 +12,3 @@ function timeout(ms, letra) {
  }
 timeout(140, "A").then(o => console.log("holaAA"));
 timeout(100, "B").then(o => console.log("holaBB"));
-// juan y cristian
-/*
-adios1A
-hola1A
-adios1B
-hola1B
-adios2B
-holaBB
-adios2A
-holaAA
-*/

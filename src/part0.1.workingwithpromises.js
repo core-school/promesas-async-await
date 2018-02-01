@@ -1,5 +1,6 @@
-/* PART 1: Running the timeout */
-const timeout = require('./part1.1.timeout');
+// PART 0: Running the timeout
+
+const timeout = require('./part0.0.the-timeout');
 
 // Example 1
 console.log('Ready....')
