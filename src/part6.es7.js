@@ -2,6 +2,7 @@
 // ES6+ Stage2
 // https://babeljs.io/blog/2015/06/07/react-on-es6-plus
 
+
 class Parent {
     constructor() {
         console.log("CALLED PARENT CONSTRUCTOR")
