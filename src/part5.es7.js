@@ -5,8 +5,7 @@ const timeout = require('./part1.1.timeout');
 // Async function one
 async function one(){
   console.log("UNO");
-  await timeout(2000)
-          .then(() => console.log("final"))// <-- LOOK AT THIS!!!
+  await timeout(2000).then(() => console.log("final"))// <-- LOOK AT THIS!!!
   console.log("Uno y medio");
   return "dos";
 }

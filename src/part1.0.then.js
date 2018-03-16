@@ -4,7 +4,7 @@
 const timeoutHola = function(ms){
     return new Promise(function(resolve){
       setTimeout(function(){
-        resolve("hola");
+        resolve("juan");
       },ms);
     })
   };
