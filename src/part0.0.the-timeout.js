@@ -5,7 +5,7 @@ const timeout = function(ms){
     setTimeout(function(){
       resolve();
     },ms);
-  })
+  });
 };
 
 module.exports = timeout;

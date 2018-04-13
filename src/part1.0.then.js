@@ -6,7 +6,7 @@ const timeoutHola = function(ms){
       setTimeout(function(){
         resolve("juan");
       },ms);
-    })
+    });
   };
 
 timeoutHola(2000).then((h) => console.log(`Say ${h}`));
