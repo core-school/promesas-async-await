@@ -1,7 +1,7 @@
 // PART 5: async await example
 
-const timeout = require('./part1.1.timeout');
-
+const timeout = require("./part1.1.timeout");
+// const timeout = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // Async function one
 const one = async () => {
@@ -19,7 +19,7 @@ const read = async () => {
 };
 
 console.log("CUATRO");
-read().then( o => console.log("CINCO"));
+read().then(o => console.log("CINCO"));
 console.log("TRES");
 var x = read().then(o => console.log(o));
 console.log(x);

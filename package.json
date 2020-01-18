@@ -19,7 +19,7 @@
     "babel-preset-stage-0": "^6.22.0"
   },
   "scripts": {
-    "start": "babel-node src/part5.es7.js",
+    "start": "babel-node",
     "compile": "mkdir -p out && babel part5.es7.js -o out/part5.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
