@@ -19,7 +19,7 @@ const read = async () => {
 };
 
 console.log("CUATRO");
-read().then(o => console.log("CINCO"));
+read().then(o => console.log("CINCO",o));
 console.log("TRES");
 var x = read().then(o => console.log(o));
 console.log(x);

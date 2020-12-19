@@ -1,6 +1,6 @@
 // PART 2: Example 2: Reject after timeout
 
-const timeout = ms =>
+const timeout = (ms) =>
   new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("Done!");
@@ -11,4 +11,4 @@ const timeout = ms =>
 
 timeout(1000)
   .then(() => console.log("OK"))
-  .catch(e => console.log("ERROR"));
+  .catch((e) => console.log("ERROR",e));

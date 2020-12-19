@@ -1,9 +1,9 @@
 // PART 4: Promise QUIZ
 
 function timeout(ms, letra) {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     console.log("adios1" + letra);
-    setTimeout(function() {
+    setTimeout(function () {
       resolve();
       console.log("adios2" + letra);
     }, ms);
@@ -11,5 +11,5 @@ function timeout(ms, letra) {
   });
 }
 
-timeout(140, "A").then(o => console.log("holaAA"));
-timeout(100, "B").then(o => console.log("holaBB"));
+timeout(140, "A").then(() => console.log("holaAA"));
+timeout(100, "B").then(() => console.log("holaBB"));
