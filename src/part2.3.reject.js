@@ -6,7 +6,7 @@ const timeout = (ms) =>
       console.log("Done!");
       resolve();
     }, ms);
-    reject();
+    reject(new Error("invalid"));
   });
 
 timeout(1000)
