@@ -1,5 +1,7 @@
 import inquirer from 'inquirer';
 import fs from 'fs-extra';
+import {execSync} from 'child_process'; 
+import chalk from 'chalk';
 
 const getParts = async ()=>{
   const files = await fs.readdir(__dirname+"/../");
@@ -13,11 +15,16 @@ const getParts = async ()=>{
   .prompt([
     {
       type: 'list',
-      name: 'part',
+      name: 'selectedPart',
       message: 'Which part?',
       choices: parts,
     },
 
   ]);
-  console.log(`Running ${selectedPart}`);
+  console.time('time');
+  console.log(chalk.red(`==== Running ${selectedPart} ====`));
+  execSync(`babel-node src/${selectedPart}`,{stdio:"inherit"});
+  console.log(chalk.red(`==== END ====`));
+  console.timeEnd('time');
+
 })();
