@@ -7,6 +7,19 @@ const getParts = async ()=>{
   const files = await fs.readdir(__dirname+"/../");
   return files.filter(s=>s.endsWith("js"));
 };
+const DEFAULTS_FILE =".default.json";
+const storeLast = async (last) => {
+  await fs.writeJSON(DEFAULTS_FILE,{last});
+}; 
+const loadLast = async () => {
+  try {
+    const {last} = await fs.readJSON(DEFAULTS_FILE);
+    return last;
+  } catch (error) {
+    return;
+  }
+}; 
+
 
 (async()=>{
   const parts = await getParts();
@@ -18,9 +31,11 @@ const getParts = async ()=>{
       name: 'selectedPart',
       message: 'Which part?',
       choices: parts,
+      default: await loadLast()
     },
-
   ]);
+  storeLast(selectedPart);
+
   console.time('time');
   console.log(chalk.red(`==== Running ${selectedPart} ====`));
   execSync(`babel-node src/${selectedPart}`,{stdio:"inherit"});

@@ -1,4 +1,4 @@
-// PART 5: async await example
+// PART 6: async await example
 
 const timeout = require("./part1.1.timeout");
 // const timeout = ms => new Promise(resolve => setTimeout(resolve, ms));
