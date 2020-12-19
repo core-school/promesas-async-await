@@ -1,4 +1,6 @@
 // PART 5: async await example with https://pokeapi.co/
+// https://github.com/tc39/proposal-top-level-await
+// https://v8.dev/features/top-level-await
 
 import axios from "axios";
 
